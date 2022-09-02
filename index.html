@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce product page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- NAVIGATION BAR -->
+    
+
+      <!-- logo and list items  -->
+    <nav class="container">
+        <div class="comapany-logo">
+            <img src="/images/logo.svg" alt="logo" class="logo">     
+        </div>    
+            <div class="list">
+                <ul>  
+                      <a href="#" id="collection"><li>Collections</li></a>
+                      <a href="#"><li>Men</li></a>
+                      <a href="#"><li>Women</li></a>
+                      <a href="#"><li>About</li></a>
+                      <a href="#"><li>Contact</li></a>
+                </ul>
+            </div> 
+            
+           
+           <!-- CART AND PERSON IMAGE AND LOGO -->
+           <div class="cart-and-person">
+               <div class="carted-value" id="carted-value"><h1 id="carted-number">0</h1></div>
+              
+                 <img src="/images/icon-cart.svg" alt="cart" class="cart" id="cart" onclick="togglebtn()" >
+                 
+                    <img src="/images/image-avatar.png" alt="person" class="person">
+                    
+              <!-- CART DROPDOWN WHEN CLICKED -->
+               <div  id="cart-drop-down-id"  class="cart-drop-down" > 
+                <h4  class="cart-header"  id="cart-header-id">Cart</h4>
+                  <hr>
+        
+
+                 <!-- CONTAINER FOR THE ADDED CART ITEMS -->
+              <div class="new-cart">
+                <div>
+                    <img src="/images/image-product-1-thumbnail.jpg" alt="carted-shoe" id="carted-shoe" class="carted-shoe">
+                </div>
+                <div class="shoe-type-and-price">
+                    <p id="shoe-name"></p>
+                    <p></p>
+                    <div class="carted-paragraph">
+                        <p id="empty-cart" class="empty-cart">The cart is empty</p>
+                        <p class="number-of-pairs" id="number-of-pairs"></p>
+                        <p class="total-amount" id="total-amount"></p>
+                    </div>
+                    
+                </div>
+                <div class="delete-cart" id="delete-cart">
+                    <img src="/images/icon-delete.svg" alt="delete-icon" class="delete-icon">
+                </div>
+                
+               
+              </div>
+              <div id="checkout-button"  >
+                    <p id="check-word"></p>
+            </div>
+
+              </div>
+             
+          </div>    
+    </nav>
+   
+
+
+
+
+
+         <!-- transparent line below the navigation bar -->
+          <div class="transparent-line"></div> 
+       
+
+    <div class="shoes">
+        <div class="big-shoe-container">
+            <img src="/images/image-product-1.jpg" alt="big-shoe" class="big-shoe"   id="big-shoe" >
+        </div>
+        
+        <div class="shoe-details">
+        <h3>SNEAKER COMPANY<br><br></h3>
+        <h1 class="shoe-name">Fall Limited Edition<br>Sneakers<br></h1>
+        <p>These low-profile sneakers are your perfect casual wear
+         <br>companion. Featuring a durable ruber outer sole,they'll
+         <br> withstand everything the weather can offer
+        </p>
+        <div class="amount">
+            <h1 class="big-shoe-size">$125.00</h1>
+            <div class="percent">
+                <h3 class="amount-font">50%</h3>
+            </div>    
+        </div>
+          <h3 class="old-price">$250.00</h3>
+        </div>
+     </div>
+        
+       
+     <!-- smaller shoes -->
+    <div class="smaller-shoes-container">
+    <div class="small-shoe">
+        <img src="/images/image-product-1-thumbnail.jpg" alt="first-shoe" class="smaller-shoe" id="first-small-shoe">
+        <img src="/images/image-product-2-thumbnail.jpg" alt="second-shoe"  class="smaller-shoe" id="second-small-shoe" >
+        <img src="/images/image-product-3-thumbnail.jpg" alt="third-shoe"  class="smaller-shoe" id="third-small-shoe" >
+        <img src="/images/image-product-4-thumbnail.jpg" alt="forth-shoe"  class="smaller-shoe" id="forth-small-shoe">
+    </div>
+    <div class="cart-and-increment-btn">
+        <div class=" increment-btn">
+            <div>
+                <img src="/images/icon-minus.svg" alt="minus" class="minus"   id="minus"> 
+            </div>
+            <p class="number" id="number">0</p>
+            <div>
+                <img src="/images/icon-plus.svg" alt="plus" class="plus" id="plus">
+            </div>
+        </div>
+        <div class="cart-btn" id="cart-btn">
+            <img src="/images/icon-cart.svg" alt="cart" class="cart-icon"  >
+            <p class="cart-message">Add to cart</p>
+        </div>
+      </div>
+</div>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVIGATION BAR */
+ .container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+ul{
+    display: flex;
+}
+
+
+ul  li{
+    margin: 0 20px;
+    margin-top: 8px;
+    list-style: none;
+    padding-bottom: 30px;
+    color: rgba(0, 0, 0, 0.534);
+    border-bottom: 5px solid white;
+    transition: 1s;
+}
+.list ul li:hover{
+    color: black;
+    border-radius: 2px;  
+    border-color:  rgba(255, 81, 0, 0.911);
+}
+
+.list ul a{
+    text-decoration: none;
+}
+
+
+.cart-and-person .person{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 4px solid rgba(255, 81, 0, 0.74);
+    border-radius:50px;
+} 
+
+.cart-and-person{
+    margin-right: 255px;
+}
+
+.cart-and-person{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cart-and-person .cart{
+    margin-right: 45px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    cursor: pointer;
+    height: fit-content;
+} 
+.the-cart{
+    display: flex;
+    flex-direction: row;
+}
+
+ .cart-drop-down{
+    display: none;
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    z-index: 1;
+    right: 200px;
+    background-color: white;
+    box-shadow: 10px 10px 10px 20px rgba(0, 0, 0, 0.041);
+    border-radius: 10px;
+    margin-top: 53px;  
+} 
+
+.remove-cart-drop-down{
+    display: flex;
+    flex-direction: column;
+   }
+
+ hr{
+    border: 2px solid rgba(0, 0, 0, 0.075);
+ }
+
+
+/* TRANSPARENT LINE BELOW THE NAVBAR */
+.transparent-line {
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.075);
+    width: 70%;
+    
+    /* width: fit-content; */
+    /* z-index: -1; */
+    margin-left: 150px;
+    border-radius: 2px;
+    
+}
+ .shoe-name{
+    color: rgba(0, 0, 0, 0.795);
+ }
+ .big-shoe-size{
+    color: rgba(0, 0, 0, 0.795);
+ }
+
+/* BODY SECTION */
+.shoes{
+    margin-left: 200px;
+    display: flex;
+}  
+
+.big-shoe{
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+.shoe-details{
+    margin-top: 100px;
+    margin-left: 90px;
+}
+h3{
+    color:rgba(255, 81, 0, 0.781) ; 
+ }
+
+ p{
+    color: rgba(0, 0, 0, 0.76);
+    margin-top: 10px;
+ }
+
+.smaller-shoe{
+     width: 70px;
+     height: 60px;
+     border-radius: 10px;
+     margin: 10px 20px 0 0;
+}
+
+.smaller-shoe:hover{
+    border: 3px solid rgba(255, 81, 0, 0.911);
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.smaller-shoes-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px ;
+}
+.amount{
+    display: flex;
+   margin-top: 30px;
+}
+
+.percent{
+   width: 60px;
+   height: 35px;
+   background-color: rgba(255, 81, 0, 0.068);;
+   padding: 10px;
+   border-radius: 5px;
+   margin:0 0 0 15px;
+   
+}
+
+.old-price{
+    margin-top: 5px;
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.438);
+}
+.cart-and-increment-btn{
+    display: flex;
+    margin-left: 60px;
+}
+.increment-btn{
+   width: 150px;
+   height: 40px;
+   background-color: rgba(128, 128, 128, 0.171);
+   border-radius: 7px;
+}
+
+/* ADD TO CART BUTT0N */
+.cart-btn{
+    display: flex;
+    width: 200px;
+    height: 40px;
+    background-color:  rgba(255, 81, 0, 0.699); 
+    margin-left: 10px;
+    border-radius: 7px;
+    justify-content: center;
+    cursor: pointer;
+}
+.cart-icon{
+ width: 18px;
+ height: 18px;
+ margin: 10px 10px 0 0;
+}
+
+
+.increment-btn{
+    display: flex;
+    justify-content:space-around;   
+}
+
+.minus{
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.plus{
+    margin-top: 15px;
+    cursor: pointer;
+}
+.cart-message{
+    color:white
+}
+
+.number{
+    font-size: larger;
+    color: black;
+    font-weight: bold;
+}
+
+
+ /* CART DROP DOWN */
+  .cart-header{
+    width: 320px;
+    height:30px ;
+    display: flex;
+    justify-content: flex-start;
+    margin-top:30px ;
+    margin-left: 30px;
+    color:  rgba(0, 0, 0, 0.719);
+    font-size: 20px;
+    
+ }
+
+ .cart-paragraph{
+    display: flex;
+    margin:70px 0 0 110px;
+    font-size: 20px;
+    color:  rgba(0, 0, 0, 0.719);
+ }
+ .carted-paragraph .empty-cart{
+    font-size: 25px;
+    color:  rgba(0, 0, 0, 0.712);
+ }
+
+ .drop-line{
+    width: 320px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.116);
+    margin-bottom: 40px;
+ }
+  
+ /* CART CONTENT WITH TOTAL NUMBER OF PAIRS ORDERED AND TOTAL AMOUNT */
+ .new-cart{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+ }
+ #carted-shoe{
+    display: none;
+    width: 50px;
+    height :50px;
+    border-radius: 10px;
+    margin-left: 20px;
+ }
+
+.carted-paragraph{
+      display: flex;
+      word-spacing: 3px;
+}
+
+.carted-paragraph p,.shoe-type-and-price p{
+    color: rgba(0, 0, 0, 0.644);
+    font-size: 22px;
+    margin: 3px;
+}
+
+#delete-cart{
+    display: none;
+    margin: 20px 10px 0 0;
+}
+.delete-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.checkout-button{ 
+    width: 360px;
+    height: 60px;
+    background-color:  rgba(255, 81, 0, 0.699); 
+    margin-left: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.check-word{
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+    
+}
+
+#carted-value{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    width: 16px;
+    height: 12px;
+    background-color:rgba(255, 81, 0, 0.466) ;
+    font-size: 7px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 100;
+}
+
+/* MEDIA QUERRY FOR MOBILE */
